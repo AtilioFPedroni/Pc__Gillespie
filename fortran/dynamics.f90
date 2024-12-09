@@ -203,6 +203,10 @@ contains
         ! Initate the random generator
         call print_info('')
         call print_progress('Generating random seed')
+
+        call read_i(dynp_i,"ID da amostra: ")
+        
+        iseed = iseed + dynp_i
         call random_ini()
         call print_done()
     
